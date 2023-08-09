@@ -1,0 +1,22 @@
+                                               MODEL
+
+A basic implementation of the Tic-Tac-Toe game with a simple version of Deep Q-Network (DQN) reinforcement learning
+for the agent's move selection.
+
+Environment (Tic-Tac-Toe): The code defines the TicTacToeEnvironment class, which handles the rules of the game. It
+includes methods for resetting the game, making moves, checking for a win, and checking for a draw.
+
+DQNAgent: The DQNAgent class handles the reinforcement learning aspect. It includes methods for building the DQN model,
+selecting actions based on an epsilon-greedy policy, storing experiences in memory, training the agent's DQN model, and
+updating the target network.
+
+Main Loop for Gameplay: The main loop controls the game and training process. It alternates between player and agent
+turns until a win, loss, or draw condition is reached. The player's move is obtained through mouse input, while the
+agent's move is selected using the DQN model.
+
+Visualization with Pygame: The code uses the Pygame library to create a graphical interface for the Tic-Tac-Toe game.
+It provides functions to draw the game board, handle player input, and visualize the game state.
+
+Training Loop: The agent is trained using a simple version of DQN. It stores experiences in memory, samples batches
+from memory, and updates the Q-values based on the Bellman equation. The epsilon value starts high and gradually decays,
+encouraging exploration early on and exploitation later.
