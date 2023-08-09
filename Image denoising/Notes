@@ -1,0 +1,37 @@
+                                                 MODEL
+
+Autoencoders: A type of neural network used for unsupervised learning, often used for feature learning and data compression.
+
+code demonstrates how to implement an autoencoder for denoising images using the Keras library. Here's a breakdown of the code:
+
+Import Libraries: Import the necessary libraries, including numpy, matplotlib.pyplot, mnist from keras.datasets, Model,
+ Input, Conv2D, MaxPooling2D, and UpSampling2D from keras.layers.
+
+Load and Preprocess MNIST Dataset: Define a function load_dataset() that loads and preprocesses the MNIST dataset. The
+ images are normalized and reshaped to have a shape of (28, 28, 1).
+
+Add Noise to Images: Define a function add_noise() that adds random noise to the images. The noise level is controlled
+by the noise_factor.
+
+Load and Prepare Data: Load the MNIST dataset using the load_dataset() function and then add noise to the images using
+the add_noise() function.
+
+Build Autoencoder Model: Define the architecture of the autoencoder model. The model includes convolutional layers for
+ encoding and decoding the images. The encoded images are then decoded using upsampling layers.
+
+Compile Model: Compile the autoencoder model using the Adam optimizer and binary cross-entropy loss.
+
+Train Autoencoder: Train the autoencoder model using the noisy images as input and the original clean images as targets.
+ The training is performed for a specified number of epochs.
+
+Display Original and Denoised Images: After training, use the trained autoencoder to denoise the noisy test images.
+ Display a comparison of the original noisy images and the denoised images side by side using matplotlib.
+
+Show Plot: Display the matplotlib plot showing the original noisy images and their denoised counterparts.
+
+The autoencoder is trained to learn a compressed representation of the input noisy images and then decode them to produce
+ denoised versions. The goal is to reduce the noise while preserving the essential features of the original images.
+
+
+
+
