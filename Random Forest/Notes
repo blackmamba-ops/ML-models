@@ -1,0 +1,25 @@
+                                        DECISION AND RANDOM FOREST
+
+In bagging, the training sets are created by randomly sampling the original training set with replacement. This means
+that it is possible for a data point to be included in multiple training sets.
+
+For example, let's say we have a dataset of 10 data points, and we want to create 2 training sets using bagging.
+We would randomly sample the dataset 2 times, with replacement. This means that it is possible for a data point to be
+included in both training sets.
+
+Here is an example of how this might work:
+RANDOM FOREST
+
+Bagging, short for Bootstrap Aggregating, is an ensemble machine learning technique that aims to improve the accuracy
+and robustness of predictive models. It involves creating multiple copies of the same model, training each copy on a
+random subset of the training data (with replacement), and then combining their predictions to make a final prediction.
+
+Bootstrap sampling, also known as resampling with replacement
+
+The first training set might contain the data points 1, 2, 3, 4, 5, 6, 7, 8, and 9.
+The second training set might contain the data points 2, 3, 4, 5, 6, 7, 8, 9, and 10.
+
+random subspace sampling (RSS):DECISION FOREST
+
+The first training set might contain the data points 1, 2, 3, 4, and 5.
+The second training set might contain the data points 6, 7, 8, 9, and 10.
