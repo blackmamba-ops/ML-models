@@ -2,7 +2,7 @@ import openai
 
 def main():
     # Set your OpenAI API key here
-    openai.api_key = "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"
+    openai.api_key = "YOUR OPEN AI API KEY"
 
     while True:
         # Get user input.
