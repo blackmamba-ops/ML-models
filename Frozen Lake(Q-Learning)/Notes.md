@@ -24,12 +24,15 @@ update_q_table(state, action, next_state, reward): This function updates the Q-t
 **Visualization:**
 
 visualize_path(path): This function visualizes the agent's path on the gridworld. It uses matplotlib to draw the grid and arrows to represent the agent's movement.
+
 **Training:**
 
 train(): This function implements the Q-learning training loop. It runs for the specified number of episodes. In each episode, the agent starts at the initial state and takes actions to navigate the gridworld until reaching the goal state. The Q-table is updated based on the rewards obtained during the episode.
+
 **Main Function:**
 
 main(): This function initiates the training process and waits for user input to exit. After training, it displays a message indicating completion and prompts the user to exit or continue.
+
 **Execution:**
 
 The code is executed when __name__ is "__main__". It calls the main() function to start the training process and visualize the agent's path for every 100 episodes.
